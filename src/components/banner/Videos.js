@@ -7,7 +7,7 @@ export default class Videos extends Component {
       <Grid centered columns={1}>
         <Grid.Column>
           <Embed
-            autoplay={false}
+            autoplay={true}
             active={true}
             brandedUI
             color='white'

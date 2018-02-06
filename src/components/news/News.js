@@ -7,7 +7,7 @@ export default class News extends Component {
   render() {
     const {title, date, description, src, href} = this.props
     return (
-      <Card fluid>
+      <Card fluid color='red'>
         <Images src={src}/>
         <Card.Content>
           <Card.Header textAlign='center'>

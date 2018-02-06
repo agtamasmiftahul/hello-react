@@ -7,7 +7,7 @@ export default class Cards extends Component {
   render() {
     const {src, href, name, age, position, nationality} = this.props
     return (
-      <Card fluid>
+      <Card fluid color='black' fluid={true}>
         <Images src={src}/>
         <Card.Content>
           <Card.Header textAlign='center'>
