@@ -1,10 +1,17 @@
 import React, { Component } from 'react'
-import Cards from './components/players/Card'
-import { Grid, Embed } from 'semantic-ui-react'
+import Cards from './Card'
+import { Grid, Embed, Label } from 'semantic-ui-react'
 
 export default class App extends Component {
   render() {
-    return (
+    return (<div>
+      <Grid centered columns={1} padded>
+        <Grid.Column>
+          <Label size='massive' color='black' ribbon>
+            PLAYERS
+          </Label>
+        </Grid.Column>
+      </Grid>
       <Grid centered columns={6} padded>
         <Grid.Column>
           <Cards
@@ -55,6 +62,7 @@ export default class App extends Component {
 
         </Grid.Column>
       </Grid>
+    </div>
     )
   }
 }
