@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Card, Image } from 'semantic-ui-react'
+import { Card } from 'semantic-ui-react'
 import Images from './Image'
 import Description from './Description'
 

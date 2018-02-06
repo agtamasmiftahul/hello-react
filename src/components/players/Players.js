@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Cards from './Card'
-import { Grid, Embed, Label } from 'semantic-ui-react'
+import { Grid, Label } from 'semantic-ui-react'
 
 export default class App extends Component {
   render() {

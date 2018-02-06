@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Grid, Card, Item, Image, Icon, Label } from 'semantic-ui-react'
+import { Grid, Label } from 'semantic-ui-react'
 import News from './News'
 
 export default class Headline extends Component {
