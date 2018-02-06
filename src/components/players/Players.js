@@ -14,7 +14,7 @@ export default class App extends Component {
           </Grid.Column>
         </Grid>
         <Grid centered columns={6} padded>
-          <Grid.Column>
+          <Grid.Column mobile={10} tablet={6} computer={3}>
             <Cards
               src='/images/players/de-gea.jpeg'
               href='http://www.manutd.com/en/Players-And-Staff/First-Team/David-De-Gea.aspx'
@@ -26,7 +26,7 @@ export default class App extends Component {
             </Cards>
 
           </Grid.Column>
-          <Grid.Column>
+          <Grid.Column mobile={10} tablet={6} computer={3}>
             <Cards
               src='/images/players/valencia.jpeg'
               href='http://www.manutd.com/en/Players-And-Staff/First-Team/Antonio-Valencia.aspx'
@@ -38,7 +38,7 @@ export default class App extends Component {
             </Cards>
 
           </Grid.Column>
-          <Grid.Column>
+          <Grid.Column mobile={10} tablet={6} computer={3}>
             <Cards
               src='/images/players/pogba.jpeg'
               href='http://www.manutd.com/en/Players-And-Staff/First-Team/Paul-Pogba.aspx'
@@ -50,7 +50,7 @@ export default class App extends Component {
             </Cards>
 
           </Grid.Column>
-          <Grid.Column>
+          <Grid.Column mobile={10} tablet={6} computer={3}>
             <Cards
               src='/images/players/martial.jpeg'
               href='http://www.manutd.com/en/Players-And-Staff/First-Team/Anthony-Martial.aspx'
