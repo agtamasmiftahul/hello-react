@@ -1,21 +1,56 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import Cards from './components/Card'
+import { Grid } from 'semantic-ui-react'
 
-class App extends Component {
+export default class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
+      <Grid centered columns={4} padded>
+        <Grid.Column>
+          <Cards
+            src='https://cdn.images.dailystar.co.uk/dynamic/58/photos/606000/620x/Lionel-Messi-679738.jpg'
+            name='Lionel Messi'
+            age={30}
+            position='Forward'
+            nationality='Argentina'
+          >
+          </Cards>
+
+        </Grid.Column>
+        <Grid.Column>
+          <Cards
+            src='https://cdn.images.dailystar.co.uk/dynamic/58/photos/606000/620x/Lionel-Messi-679738.jpg'
+            name='Lionel Messi'
+            age={30}
+            position='Forward'
+            nationality='Argentina'
+          >
+          </Cards>
+
+        </Grid.Column>
+        <Grid.Column>
+          <Cards
+            src='https://cdn.images.dailystar.co.uk/dynamic/58/photos/606000/620x/Lionel-Messi-679738.jpg'
+            name='Lionel Messi'
+            age={30}
+            position='Forward'
+            nationality='Argentina'
+          >
+          </Cards>
+
+        </Grid.Column>
+        <Grid.Column>
+          <Cards
+            src='https://cdn.images.dailystar.co.uk/dynamic/58/photos/606000/620x/Lionel-Messi-679738.jpg'
+            name='Lionel Messi'
+            age={30}
+            position='Forward'
+            nationality='Argentina'
+          >
+          </Cards>
+
+        </Grid.Column>
+      </Grid>
+    )
   }
 }
-
-export default App;
