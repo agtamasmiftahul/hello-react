@@ -10,7 +10,7 @@ export default class Navigation extends Component {
         <Grid.Column>
             <Menu color='red' pointing secondary>
               <Menu.Menu position='left'>
-                <Images src='/images/favicon/favicon.png'/>
+                <Images src='/images/brand/brand.webp' href='#'/>
               </Menu.Menu>
               <Link />
             </Menu>
