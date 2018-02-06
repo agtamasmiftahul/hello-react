@@ -3,6 +3,7 @@ import { Image } from 'semantic-ui-react'
 
 export default class Images extends Component {
   render() {
-    return (<Image src={this.props.src}/>)
+  const { src, href } = this.props
+    return (<Image src={src} href={href} fluid/>)
   }
 }
