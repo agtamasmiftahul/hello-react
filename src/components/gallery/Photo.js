@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Grid, Label } from 'semantic-ui-react'
-import ReactDOM from 'react-dom'
 import Gallery from 'react-photo-gallery'
 
 export default class Photo extends Component {
