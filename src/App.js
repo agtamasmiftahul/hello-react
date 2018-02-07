@@ -7,6 +7,7 @@ import Nav from './components/nav/Navigation'
 import Player from './components/players/Players'
 import Headline from './components/news/Headline'
 import Banner from './components/banner/Videos'
+import Photos from './components/gallery/Photo'
 
 const Players = () => (
   <Player/>
@@ -17,7 +18,14 @@ const Headlines = () => (
 )
 
 const Gallery = () => (
-  <Banner/>
+  <Grid centered columns={1}>
+    <Grid.Column>
+      <Photos/>
+    </Grid.Column>
+    <Grid.Column>
+      <Banner/>
+    </Grid.Column>
+  </Grid>
 )
 
 const BasicExample = () => (
