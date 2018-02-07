@@ -23,9 +23,9 @@ const Gallery = () => (
 const BasicExample = () => (
 <Router>
   <Grid columns={1}>
-    <Grid.Row>
+    <Grid.Column>
       <Nav/>
-    </Grid.Row>
+    </Grid.Column>
     <Grid.Column>
       <Route exact path='/' component={Headlines}/>
       <Route path='/team' component={Players}/>

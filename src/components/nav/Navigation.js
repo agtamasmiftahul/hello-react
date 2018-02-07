@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Grid, Menu } from 'semantic-ui-react'
+import { Grid, Menu, Segment } from 'semantic-ui-react'
 import Link from './Link'
 import Images from './Image'
 
@@ -8,12 +8,14 @@ export default class Navigation extends Component {
     return (
       <Grid columns={1}>
         <Grid.Column>
-            <Menu color='red' secondary>
+          <Segment color='red' basic={true} inverted>
+            <Menu size='large' inverted secondary>
               <Menu.Menu position='left'>
-                <Images src='/images/brand/brand.webp' href='#'/>
+                <Images src='/images/favicon/favicon.png' href='#'/>
               </Menu.Menu>
               <Link/>
             </Menu>
+          </Segment>
         </Grid.Column>
       </Grid>
     )
