@@ -2,12 +2,14 @@ import React from 'react'
 import { Grid } from 'semantic-ui-react'
 import {
   BrowserRouter as Router,
-  Route } from 'react-router-dom'
+  Route
+} from 'react-router-dom'
 import Nav from './components/nav/Navigation'
 import Player from './components/players/Players'
 import Headline from './components/news/Headline'
 import Banner from './components/banner/Videos'
 import Photos from './components/gallery/Photo'
+import Maps from './components/info/Maps'
 
 const Players = () => (
   <Player/>
@@ -28,7 +30,11 @@ const Gallery = () => (
   </Grid>
 )
 
-const BasicExample = () => (
+const About = () => (
+  <Maps/>
+)
+
+const Navigation = () => (
 <Router>
   <Grid columns={1}>
     <Grid.Column>
@@ -38,9 +44,10 @@ const BasicExample = () => (
       <Route exact path='/' component={Headlines}/>
       <Route path='/team' component={Players}/>
       <Route path='/gallery' component={Gallery}/>
+      <Route path='/about' component={About}/>
     </Grid.Column>
 </Grid>
 </Router>
 )
 
-export default BasicExample
+export default Navigation
