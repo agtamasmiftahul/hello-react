@@ -10,6 +10,7 @@ import Headline from './components/news/Headline'
 import Banner from './components/banner/Videos'
 import Photos from './components/gallery/Photo'
 import Maps from './components/info/Maps'
+import Forms from './components/info/Form'
 
 const Players = () => (
   <Player/>
@@ -31,7 +32,14 @@ const Gallery = () => (
 )
 
 const About = () => (
-  <Maps/>
+  <Grid centered columns={1}>
+    <Grid.Column>
+      <Maps/>
+    </Grid.Column>
+    <Grid.Column>
+      <Forms/>
+    </Grid.Column>
+  </Grid>
 )
 
 const Navigation = () => (
